@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import InfoCard from "../components/InfoCard";
 
 const search = ({ searchResults }) => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const router = useRouter();
   const { location, startDate, endDate, noOfGuests } = router.query;
 
