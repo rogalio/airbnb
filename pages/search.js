@@ -4,6 +4,7 @@ import React from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import InfoCard from "../components/InfoCard";
+import Map from "../components/Map";
 
 const search = ({ searchResults }) => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -48,6 +49,9 @@ const search = ({ searchResults }) => {
               }
             )}
           </div>
+        </section>
+        <section className=" hidden xl:inline-flex xl:min-w-[600px]">
+          <Map searchResults={searchResults} />
         </section>
       </main>
       <Footer />
